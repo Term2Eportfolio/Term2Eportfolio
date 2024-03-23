@@ -1,0 +1,19 @@
+.logo {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  
+  .logo h3{
+  color: #469b6f;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+  max-width: 70px;
+    height: 20px;
+    text-align: center;
+  background-color: black;
+  font-family: "Ojuju";
+  border-radius: 15%;
+  }

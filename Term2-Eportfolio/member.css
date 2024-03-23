@@ -1,0 +1,90 @@
+
+.navi {
+
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  
+  .navi {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navi ul {
+  
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navi ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navi a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .contact {
+    border: 2px solid lightgreen;
+    padding: 10px;
+    width: 14vw;
+    padding-left: 10px;
+    font-size: 12px;
+        text-align: center;
+      background-color: lightgreen;
+      color: black;
+    height: 10vh; 
+     font-family: "Madimi One", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    border-radius: 20%;
+  }
+  a {
+    text-decoration: none;
+    color: #d658df;
+  }
+  
+  a:hover {
+    color: #ea3edb;
+  }
+      img {
+        float: right;
+        padding-right: 20vh;
+      }
+  
+  html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #eb78db, #ebd878, #ebb978, #eb9e78);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+     font-family: "Madimi One", sans-serif;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  img {
+    max-width: 60vw;
+    max-height: 50vh;
+  }

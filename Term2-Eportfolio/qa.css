@@ -1,0 +1,185 @@
+/* Sizing and colouring of the box */
+
+.large-box {
+    background-color: lightgreen;
+  
+    max-width: 375px;
+  max-height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+  padding-left: 50px;
+  margin-right: auto;
+   align-items: right;
+border-radius: 20%;
+
+}
+
+input[type=text]:focus {
+  border-radius: 20%;
+}
+
+input[type=text]:focus {
+  background-color: #b9eee4;
+}
+
+input[type=submit] {
+  font-family: sans-serif;
+  background-color: #934393;
+  color: #f04c4c;
+  border-radius: 20%;
+}
+input[type=submit]:hover{
+  background-color: #000000;
+}
+
+   body{
+     background-color: black;
+   } 
+
+/* Separating the boxes */
+
+.large-box + .large-box {
+    margin-top: 20px;
+
+}
+
+
+.header {
+    color: black;
+    align-items: left;
+  font-family: "Madimi One", sans-serif;
+}
+
+input {
+    border: 1px solid lightblue;
+    padding: 5px;
+    border-radius: 3px;
+  font-family: "Madimi One", sans-serif;
+	color: #7f7fd2;
+}
+
+
+.navi {
+
+  background-color: lightgreen;
+  padding: 10px;
+}
+.navi {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navi ul {
+
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.navi ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navi a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Madimi One", sans-serif;
+}
+
+
+
+
+.submit {
+    border: 2px solid lightgreen;
+    padding: 10px;
+    max-width: 150px;
+    padding-left: 20px;
+  padding-right: 20px;
+    font-size: 16px;
+        text-align: center;
+      background-color: lightgreen;
+      color: black;
+    height: 30px; 
+    font-family: 'Oswald', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    border-radius: 20%;
+
+}
+
+/* Making the calendar box visible, aligning it to the left and sizing it appropriately */
+
+.calendar {
+  border: 2px solid lightgreen;
+  padding: 10px;
+  width: 14vw;
+  padding-left: 10px;
+  font-size: 25px;
+      text-align: center;
+    background-color: lightgreen;
+    color: black;
+  height: 25vh; 
+  font-family: 'Oswald', Arial, s=ans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  border-radius: 20%;
+
+    margin-top: -300px;
+}
+
+#confirmation{
+  text-align: center;
+  font-family: "Madimi One", sans-serif;
+  font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #d658df;
+  font-family: "Madimi One", sans-serif;
+}
+
+a:hover {
+  color: #ea3edb;
+}
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+/* Creating background gradient */
+
+body {
+    background: linear-gradient(-45deg, #eb78db, #ebd878, #ebb978, #eb9e78);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

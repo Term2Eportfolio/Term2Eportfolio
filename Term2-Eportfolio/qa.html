@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="qa.css">
+  <link rel="stylesheet" href="logo.css">
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Event</title>
+</head>
+<body>
+
+  <div class = "logo">
+    <h3>Sennity</h3>
+  </div>
+  
+  <nav>
+    <ul>
+                <div class = "navi">
+                    <li><a href="index.html">Home</a></li>
+                  <li><a href="com.html">Our Community</a></li>
+                  <li><a href="event.html">Events</a></li>
+                  </ul>
+                  </div>
+                  </nav>
+  
+  <h1 class="header">Create Your <br> Event</h1>
+
+  <div class="large-box">
+    <p>Name of the Event</p>
+    <div class="input">
+      <input type="text" id="event-name" placeholder="Enter here">
+      <input type="submit">
+    </div>
+  </div>
+  
+  <div class="large-box">
+    <p>Date and Time</p>
+    <div class="input">
+      <input type="text" id="event-date" placeholder="Enter here">
+      <input type="submit">
+    </div>
+  </div>
+  
+  <div class="large-box">
+    <p>Related Interests</p>
+    <div class="input">
+      <input type="text" id="event-interest" placeholder="Enter here">
+      <input type="submit">
+    </div>
+  </div>
+  
+  <div class="calendar">
+    <a href="https://www.google.com/calendar">Calendar</a>
+  </div>
+  
+  <div class="submit">
+    <a href="mailto:sennity@gmail.com?subject=Event%20Plan&body=Event%20Name%3A%0A%0AEvent%20Time%20and%20Date%3A%20%0A%0ARelated%20Interests">Send Event Details</a>
+  </div>
+
+  <p id="confirmation">Please fill out the fields above</p>
+
+  <script>
+    document.getElementById("event-name").addEventListener('input', function() {
+      var eventNameInput = document.getElementById("event-name").value;
+      if(eventNameInput.toLowerCase() === "movie") {
+        document.getElementById("confirmation").innerText = "This event is not acceptable, please change the event name";
+      } else {
+        document.getElementById("confirmation").innerText = "Please fill out the fields above";
+      }
+    });
+
+    document.getElementById("event-date").addEventListener('input', function() {
+      var eventDateInput = document.getElementById("event-date").value;
+      if(eventDateInput.toLowerCase() === "16/4/24, 16:00") {
+        document.getElementById("confirmation").innerText = "This event is not acceptable, please change the event date";
+      } else {
+        document.getElementById("confirmation").innerText = "Please fill out the fields above";
+      }
+    });
+
+    document.getElementById("event-interest").addEventListener('input', function() {
+      var eventInterestInput = document.getElementById("event-interest").value;
+      if(eventInterestInput.toLowerCase() === "theatre") {
+        document.getElementById("confirmation").innerText = "This event is not acceptable, please change the event interest";
+      } else {
+        document.getElementById("confirmation").innerText = "This event is acceptable, please send the event details to the Sennity team.";
+      }
+    });
+    
+  </script>
+  
+</body>
+</html>
